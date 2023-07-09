@@ -1,0 +1,38 @@
+void main(void)
+{
+    int proc_id[3];
+    int proc_ret[3];
+    int i;
+    int proc_done;
+
+    proc_id[0] = 1;
+    proc_id[1] = 2;
+    proc_id[2] = 3;
+
+    proc_ret[0] = 0;
+    proc_ret[1] = 0;
+    proc_ret[2] = 0;
+
+    proc_done = 0;
+
+    while (proc_done < 3)
+    {
+        i = 0;
+
+        while (i < 3)
+        {
+
+            if (proc_ret[i] == 0)
+            {
+                output(proc_id[i]);
+                sleep(2000);
+                proc_ret[i] = exec_proc(proc_id[i]);
+                proc_done = proc_done + proc_ret[i];
+            }
+
+            i = i + 1;
+        }
+    }
+
+    output(4095);
+}
