@@ -23,7 +23,6 @@ Address aux;
 Address var;
 Address offset;
 
-//MIGHT NEED CHANGING WHEN ADDING INSTRUCTIONS
 const char *operatorName[] = {"ADD", "SUB", "MUL", "DIV", "MOD", "LT", "LTE", "GT", "GTE", "EQ", "OR", "ASSIGN", "ALLOC", "IMMED", "LOAD", "STORE", "VECTOR", "GOTO", "IF", "RET", "FUNC", "F_END", "PARAM", "CALL", "ARG", "LAB", "HALT"};
 
 Address empty;

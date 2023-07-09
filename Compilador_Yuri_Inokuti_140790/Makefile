@@ -1,7 +1,3 @@
-#Requires: build-essential flex bison libbison-dev
-#Run:
-#	make
-#	./Compiler <Filename>
 
 all: tokenizer parser build
 

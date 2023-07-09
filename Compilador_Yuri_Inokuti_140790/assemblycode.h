@@ -27,7 +27,6 @@ extern int progloc; // (0: SO; 1:3 - Programas)
 #define cycles_div 5
 #define cycles_1s processor_clock/(2*cycles_div)
 
-//ADD INSTRUCTIONS HERE
 typedef enum {  nop, halt, add, addi, bgt, sub, subi, mul, divi, mod, and, or, not, xor, muli, slt, sgt,
                 sle, sge, blt, shl, shr, move, ret,
                 li, beq, bne, j, jal, in, out, sw, lw, jr, ctx, getch, dwpx, dwch} InstrKind;

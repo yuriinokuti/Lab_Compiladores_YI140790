@@ -3,7 +3,6 @@
 #include "intercode.h"
 #include "assemblycode.h"
 
-//ADD INSTRUCTIONS HERE
 const char * opcodes[] =  { "nop", "halt", "add", "addi", "bgt",
                             "sub", "subi", "mul", "divi", "mod",
                             "and", "or", "not", "xor", "muli",
@@ -78,11 +77,6 @@ void GenBinary (AssemblyCode head, int size) {
             // fprintf(c, "%s\n", bin);
             fprintf(bcode,"%s //%s\n", bin, opcodes[a->line.instruction.opcode]);
         }
-        /*
-        else {
-            fprintf(bcode,"//%s\n", a->line.label);
-        }
-        */
         a = a->next;
     }
 

@@ -3,12 +3,8 @@
 
 #include "globals.h"
 
-/* set NO_PARSE to TRUE to get a scanner-only compiler */
 #define NO_PARSE FALSE
-/* set NO_ANALYZE to TRUE to get a parser-only compiler */
 #define NO_ANALYZE FALSE
-
-/* set NO_CODE to TRUE to get a compiler that does not generate intermediate code */
 #define NO_CODE FALSE
 
 #include "util.h"
@@ -28,7 +24,6 @@
 #include "assemblycode.h"
 #include "binarycode.h"
 
-/* allocate global variables */
 int progloc = 0;
 int lineno = 0;
 FILE * source;
@@ -37,7 +32,6 @@ FILE * codeinter;
 FILE * acode;
 FILE * bcode;
 
-/* allocate and set tracing flags */
 int EchoSource = FALSE;
 int TraceScan = TRUE;
 int TraceParse = TRUE;
@@ -50,7 +44,7 @@ int main( int argc, char * argv[] ){
 	TreeNode * syntaxTree;
 	QuadList Quads;
 	AssemblyCode codehead;
-	char pgm[120]; /* source code file name */
+	char pgm[120]; 
 
 	if (argc != 3)
 	{ 

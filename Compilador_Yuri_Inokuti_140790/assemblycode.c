@@ -1,4 +1,3 @@
-// In memory of Le4ndrones
 
 #include "globals.h"
 #include "symtab.h"
@@ -6,7 +5,6 @@
 #include "intercode.h"
 #include <math.h>
 
-//ADD INSTRUCTIONS HERE
 const char *operatorNameInstruction[] = {"nop", "halt", "add", "addi", "bgt", "sub", "subi", "mul", "divi", "mod", "and", "or", "not", "xor", "muli",
                                         "slt", "sgt", "sle", "sge", "blt", "shl", "shr", "move", "ret", "li", "beq", "bne", "j", "jal", "in", "out",
                                         "sw", "lw", "jr", "ctx", "getch", "dwpx", "dwch"};

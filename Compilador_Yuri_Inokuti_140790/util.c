@@ -5,7 +5,6 @@
 
 FILE * intercode;
 
-//MIGHT NEED CHANGING WHEN ADDING INSTRUCTIONS
 void printType( TokenType token ){
     switch (token){
         case SOM: fprintf(intercode, "SOM");   break;
